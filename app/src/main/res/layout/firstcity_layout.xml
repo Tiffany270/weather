@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#FFF2F2F2"
+              android:orientation="vertical"
+              android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_weight="0.10"
+        android:background="@drawable/background"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/city"
+                />
+
+            <TextView
+
+                android:id="@+id/title_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="北京"
+                android:textSize="20sp"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/body_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-25dp"
+            android:text="TEMP"
+            android:textColor="#A8A2A2"
+            android:textSize="100dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-15dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="阴 |  "
+                android:textSize="15sp"
+                />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/air"/>
+
+            <TextView
+                android:id="@+id/qlty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="空气 "
+                android:textSize="15sp"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <TextView
+                style="@style/text"
+                android:text="风力/风向"
+                />
+
+            <TextView
+                style="@style/text"
+                android:text="相对湿度"
+                />
+
+            <TextView
+                style="@style/text"
+                android:text="能见度"
+                />
+
+            <TextView
+                style="@style/text"
+                android:text="气压"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/dir"
+                style="@style/text2"
+                android:text="风力/风向"
+                />
+
+            <TextView
+                android:id="@+id/hum"
+                style="@style/text2"
+                android:text="相对湿度"
+                />
+
+            <TextView
+                android:id="@+id/vis"
+                style="@style/text2"
+                android:text="能见度"
+                />
+
+            <TextView
+                android:id="@+id/pres"
+                style="@style/text2"
+                android:text="气压"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+
+        style="@style/liearlayout"
+        android:layout_marginTop="40dp">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/uv"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="紫外线"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/uv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="5"
+            android:paddingTop="3dp"
+            android:text="。"
+            android:textSize="11sp"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        style="@style/liearlayout"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/sport"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="户外"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/sport"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="5"
+            android:paddingTop="3dp"
+            android:text="..。"
+            android:textSize="11sp"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        style="@style/liearlayout"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/trav"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="防护"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/trav"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="5"
+            android:paddingTop="3dp"
+            android:text="。。。。。。。"
+            android:textSize="11sp"
+            />
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

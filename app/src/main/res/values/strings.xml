@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Weather</string>
+
+
+
+    <string-array name="name">
+        <item>重庆</item>
+        <item>北京</item>
+        <item>梧州</item>
+        <item>厦门</item>
+        <item>涪陵</item>
+        <item>成都</item>
+        <item>三亚</item>
+    </string-array>
+
+</resources>
+
+
